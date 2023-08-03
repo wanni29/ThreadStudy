@@ -28,6 +28,10 @@ public class ThreadExample {
         thread2.start();
 
         // 메인 쓰레드는 쓰레들이 모두 끝날 때까지 기다림
+        // join()은 쓰레드(Thread) 관련 메서드로, 자바(Java)에서 사용됩니다. 
+        // 이 메서드는 현재 실행 중인 쓰레드가 다른 쓰레드의 작업이 끝날 때까지 기다리도록 합니다. 
+        // 즉, join() 메서드를 호출한 쓰레드는 
+        // 대상 쓰레드가 작업을 완료할 때까지 블로킹(blocking) 상태가 됩니다
         try {
             thread1.join();
             thread2.join();
