@@ -1,4 +1,4 @@
-public class ThreadExample {
+public class ThreadStudy01 {
     public static void main(String[] args) {
 
         // 쓰레드 객체 생성
